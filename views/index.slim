@@ -1,0 +1,11 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+h1 index.slim
+button#btn alert
+
+/部分テンプレートの呼び出し
+== slim :_parts
+
+coffee:
+  $('#btn').click ->
+    alert "CoffeeScriptのアラート2"
